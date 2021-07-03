@@ -11,7 +11,7 @@ from logging.handlers import TimedRotatingFileHandler
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
-t_handler = TimedRotatingFileHandler(filename='ff.log',when='midnight',interval=1)
+t_handler = TimedRotatingFileHandler(filename='connection.log',when='midnight',interval=1)
 f_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 t_handler.setFormatter(f_format)
 t_handler.setLevel(logging.DEBUG)
