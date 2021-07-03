@@ -42,5 +42,9 @@ def isOpen(ip, port):
     finally:
         s.close()
 
+    
+for i in ip:
+    isOpen(i,port)
+
 
 
